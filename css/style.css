@@ -13,6 +13,8 @@
 }
 
 
+
+
 body{
     background-image: url(../imgs/backgroundimage.png);    
     animation-name: opacity;    
@@ -30,12 +32,19 @@ h1{
     text-align: center;
 }
 
-
-
 h3{
     font-style: italic;
 }
 
+nav div ul li a{
+    color: #b89790 !important;
+}
+
+nav div ul li a:hover{
+    cursor: pointer;
+    color: #60ab90 !important;
+    font-weight: 600;
+}
 
 .envio__pago{
 
@@ -56,6 +65,13 @@ h3{
     text-align: center;
     justify-content: center;
 }
+
+@media (max-width:992px){
+    #aside{
+        margin-top: 30px;
+    }
+}
+
 
 footer{
     width: 100%;
@@ -112,4 +128,15 @@ footer{
     background-color:rgb(157, 250, 217, .3);
     margin: 50px auto;
     padding: 50px 30px;
+}
+
+@media (max-width: 992px){
+    .mapa{
+        display: flex;
+        width: 100vw !important;
+        margin-bottom: 50px;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+    }
 }
